@@ -1,0 +1,12 @@
+--- ctrlc-3.1.3/Cargo.toml	1970-01-01T00:00:00+00:00
++++ ctrlc-3.1.3/Cargo.toml	2019-06-09T11:56:40.940082+00:00
+@@ -31,9 +31,3 @@
+ termination = []
+ [target."cfg(unix)".dependencies.nix]
+ version = "0.14"
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["consoleapi", "handleapi", "synchapi", "winbase"]
+-[target."cfg(windows)".dev-dependencies.winapi]
+-version = "0.3"
+-features = ["fileapi", "processenv", "winnt"]
